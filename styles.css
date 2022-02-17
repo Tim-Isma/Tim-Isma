@@ -3,11 +3,24 @@ h1 {
 }
 
 p {
-    color: green;
+    color: hsl(120, 100%, 25%);
+    width: 90%;
+    font-size: 20px;
 }
 
-.bloc {
+#bloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: auto;
+    height: 200px;
     background-color: burlywood;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px black;
+}
+
+#bloc :hover{
+    transform: scale(1.5);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
